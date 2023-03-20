@@ -28,3 +28,5 @@ def remove_word_with_one_em(s):
 
 string = input('Введите текст: ').split(' ')
 remove_word_with_one_em(string)
+
+# Да, вариант рабочий. Можно еще воспользоваться методом removesuffix('!') для второго пункта
