@@ -7,3 +7,12 @@ print(my_favorite_songs[:x], end=' ')
 print(my_favorite_songs[y + 2:], end=' ')
 print(my_favorite_songs[x + 2:z], end=' ')
 print(my_favorite_songs[s + 2:y], end=' ')
+
+# Отлично!
+# Альтернативный вариант. мы можем воспользоваться методом разделения строк по символам. split.
+# Полученный в результате список проиндексируем по песням
+
+# Решение с помощью метода split() и индексации списков
+songs = my_favorite_songs.split(', ')
+
+print(songs[0], songs[-1], songs[1], songs[-2])
