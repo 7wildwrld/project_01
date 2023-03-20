@@ -63,3 +63,19 @@ dt = datetime.time(0, sumMin + min_1, sec_1)
 print('Три песни звучат', dt.strftime("%M:%S"), 'минут')
 random_songs = random.choices(list(my_favorite_songs_dict.keys()), k = 3)
 print('Случайные песни:', random_songs)
+
+
+# Интересный вариант! Все супер. Ну только единственное, choices возвращает три с повторениями, а функция sample без повторий
+# На примере списка мой пример с дополнительным пакетом math, но его можно и убрать, немного переделав код.
+
+from datetime import timedelta
+from random import sample
+from math import modf
+
+total_time = timedelta()
+
+for song in sample(my_favorite_songs, 3):
+    s, m = modf(song[1])
+    total_time += timedelta(minutes=int(m), seconds=int(s * 100))
+
+print(f'Три песни звучат {total_time} минут')
