@@ -25,3 +25,6 @@ for rea, code in titles.items():
     price += dict1.get('price')
     total_cost += dict1.get('price') * dict1.get('quantity')
   print(rea, '-', quantity, 'шт,', 'стоимость', total_cost,'руб')
+
+# Тоже какие либо замечаний нет)
+# Было приятно читать ваш код)
