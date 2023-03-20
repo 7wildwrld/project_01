@@ -4,3 +4,5 @@ def switch_it_up(number):
 
 num = int(input('Введите число: '))
 switch_it_up(num)
+
+# А, ну вот кстати в таком же стиле можно и task_2.2 решить!
