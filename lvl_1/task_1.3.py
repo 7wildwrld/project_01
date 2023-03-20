@@ -11,3 +11,5 @@ elif month in days_31:
   print('Вы ввели', months[month - 1] + '.', num3, 'дней')
 else:
   print('Такого месяца нет!')  
+  
+#   Ну тут коментариев нет)
