@@ -27,7 +27,7 @@ def get_info(student_id):
     cursor.execute(select_query,(student_id,))
     record = cursor.fetchone()
     close_connection(connection)
-    print('ID студента: ' + str(record[0]), 'Имя студента: ' + record[1], 'ID школы: ' + str(record[2]), 'Название школы: ' + record[3], sep= '\n')
+    print('ID студента: ' + str(record[0]), 'Имя студента: ' + record[1], 'ID школы: ' + str(record[2]), 'Название школы: ' + record[3], sep='\n')
   except (Exception, sqlite3.Error) as error:
     print ("Ошибка в получении данных", error)
 
